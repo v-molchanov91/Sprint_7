@@ -2,7 +2,7 @@ import pytest
 import allure
 from api.order_client import OrderClient
 from helpers.data_generator import generate_order_data
-from data.config import BASE_URL
+from data.config import BaseUrl
 
 
 @allure.feature("Order API")
@@ -15,7 +15,7 @@ class TestOrderCreate:
     )
     @allure.title("Проверка создания заказа с разными цветами: {colors}")
     def test_create_with_various_colors(self, colors):
-        client = OrderClient(BASE_URL)
+        client = OrderClient(BaseUrl.BASE_URL)
         payload = generate_order_data(color=colors)
 
         response = client.create_order(payload)

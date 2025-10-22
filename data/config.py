@@ -1,22 +1,12 @@
-BASE_URL = "https://qa-scooter.praktikum-services.ru"
-
-# логин курьера
-COURIER_LOGIN = "/api/v1/courier/login"
-
-# создание курьера
-COURIER = "/api/v1/courier"
-
-# создание заказа и получение списка заказов
-ORDERS = "/api/v1/orders"
-
-# получение заказа по номеру
-ORDER_TRACK = "/api/v1/orders/track"
-
-# принять заказ
-ACCEPT_ORDER = "/api/v1/orders/accept"
+class BaseUrl:
+    BASE_URL = "https://qa-scooter.praktikum-services.ru"
+    COURIER_LOGIN = "/api/v1/courier/login"
+    COURIER = "/api/v1/courier"
+    ORDERS = "/api/v1/orders"
+    ORDER_TRACK = "/api/v1/orders/track"
+    ACCEPT_ORDER = "/api/v1/orders/accept"
 
 
-# ошибки курьера
 class ErrorCourier:
     MISSING_LOGIN_OR_PASSWORD = "Недостаточно данных для входа"
     IS_NO_ACCOUNT = "Учетная запись не найдена"
