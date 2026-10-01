@@ -1,5 +1,27 @@
 __pycache__/
+__pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
 .venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
 .env
-target/allure-results/
+
+# Allure results (не коммитим, но при сдаче форсируем добавление)
+target/
+!target/allure-results/  # ← если вы хотите коммитить только отчёт, а не всю папку target
+
+# Logs and databases
+*.log
+*.sqlite3
